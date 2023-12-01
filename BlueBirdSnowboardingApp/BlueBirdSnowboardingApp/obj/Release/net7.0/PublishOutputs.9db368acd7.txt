@@ -1,0 +1,7 @@
+/Users/luizpaulomiranda/Desktop/LuizPauloMiranda_TP01/BlueBirdSnowboardingApp
+/Users/luizpaulomiranda/Desktop/LuizPauloMiranda_TP01/appsettings.Development.json
+/Users/luizpaulomiranda/Desktop/LuizPauloMiranda_TP01/appsettings.json
+/Users/luizpaulomiranda/Desktop/LuizPauloMiranda_TP01/BlueBirdSnowboardingApp.dll
+/Users/luizpaulomiranda/Desktop/LuizPauloMiranda_TP01/BlueBirdSnowboardingApp.deps.json
+/Users/luizpaulomiranda/Desktop/LuizPauloMiranda_TP01/BlueBirdSnowboardingApp.runtimeconfig.json
+/Users/luizpaulomiranda/Desktop/LuizPauloMiranda_TP01/BlueBirdSnowboardingApp.pdb

@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{6CD90997-7C05-4DA3-94B1-5596298646D9}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../BlueBirdSnowboardingApp/Program.cs" line="3" column="0" endLine="3" endColumn="16" offsetX="-1" offsetY="-1" expression="builder.Services" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.BlueBirdSnowboardingApp PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlueBirdSnowboardingApp/appsettings.json">
+    <Files>
+      <File FileName="BlueBirdSnowboardingApp/Pages/Edit.cshtml.cs" Line="27" Column="16" />
+      <File FileName="BlueBirdSnowboardingApp/appsettings.json" Line="8" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlueBirdSnowboardingApp" expanded="True">
+            <Node name="BlueBirdSnowboardingApp" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Edit.cshtml" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>

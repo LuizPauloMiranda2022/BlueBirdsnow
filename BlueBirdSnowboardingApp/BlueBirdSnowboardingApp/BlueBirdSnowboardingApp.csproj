@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <Content Remove="wwwroot\images\" />
+    <Content Remove="wwwroot\images\02.jpg" />
+    <Content Remove="wwwroot\images\03.jpg" />
+    <Content Remove="wwwroot\images\flyngv.jpg" />
+    <Content Remove="wwwroot\images\04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="models\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="models\" />
+    <None Remove="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\02.jpg" />
+    <None Include="wwwroot\images\03.jpg" />
+    <None Include="wwwroot\images\01.jpg" />
+    <None Include="wwwroot\images\04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NToastNotify" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="7.0.14" />
+  </ItemGroup>
+</Project>

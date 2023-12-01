@@ -1,0 +1,127 @@
+﻿/* General styles for the 'styling' class */
+.styling {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Slight shadow for depth */
+    max-width: 800px;
+    margin: 0 auto; /* center the div if it's placed in a larger container */
+    color: #555; /* Dark gray text for better readability */
+}
+
+    .styling h1 {
+        font-size: 2.5em;
+        color: #888; /* Muted gray for headings */
+        border-bottom: 1px solid #ccc; /* Light gray border */
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .styling h2 {
+        font-size: 2em;
+        color: #888;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .styling p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .styling strong {
+        color: #777; /* Slightly darker for emphasis */
+        font-weight: bold;
+    }
+
+    .styling ul, .styling ol {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .styling li {
+        margin-bottom: 10px;
+    }
+
+    .styling span {
+        font-style: italic;
+        color: #666; /* Slightly muted color for the italic text */
+    }
+    .flex-container {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .content{
+        flex: 1;
+        padding-right: 20px;
+    }
+    .image-container {
+        width: 300px; /* Set this to the diameter of the desired circle */
+        height: 300px;
+        border-radius: 50%; /* Makes the container circular */
+        overflow: hidden; /* Ensures the image doesn't spill out of the circular container */
+        display:flex;
+        justify-content:center;
+        
+    }
+    .about-image{
+        width: 300px;
+        height:300px;
+        object-fit:cover;
+        
+    }
+.stylingprivacy {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Slight shadow for depth */
+    max-width: 800px;
+    margin: 0 auto; /* center the div if it's placed in a larger container */
+    color: #555; /* Dark gray text for better readability */
+}
+
+    .stylingprivacy h1 {
+        font-size: 2.5em;
+        color: #888; /* Muted gray for headings */
+        border-bottom: 1px solid #ccc; /* Light gray border */
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .stylingprivacy h2 {
+        font-size: 2em;
+        color: #888;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .stylingprivacy p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .stylingprivacy strong {
+        color: #777; /* Slightly darker for emphasis */
+        font-weight: bold;
+    }
+
+    .stylingprivacy ul, .stylingprivacy ol {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .stylingprivacy li {
+        margin-bottom: 10px;
+    }
+
+    .stylingprivacy span {
+        font-style: italic;
+        color: #666; /* Slightly muted color for the italic text */
+    }
+    
+

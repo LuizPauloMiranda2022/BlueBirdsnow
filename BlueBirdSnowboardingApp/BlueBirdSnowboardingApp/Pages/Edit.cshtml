@@ -1,0 +1,65 @@
+﻿@page
+@model BlueBirdSnowboardingApp.Pages.EditModel
+
+<div class="row pt-5">
+    <div class="col-md-4">
+        <form method="post">
+            <h4>Alteracão de Snowboarding</h4>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="Snowboard.Snowboardid" />
+
+            <div class="form-group">
+                <label asp-for="Snowboard.Nome" class="control-label"></label>
+                <input asp-for="Snowboard.Nome" class="form-control" />
+                <span asp-validation-for="Snowboard.Nome" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Snowboard.Descricao" class="control-label"></label>
+                <input asp-for="Snowboard.Descricao" class="form-control" />
+                <span asp-validation-for="Snowboard.Descricao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Snowboard.ImagemUri" class="control-label"></label>
+                <input asp-for="Snowboard.ImagemUri" class="form-control" />
+                <span asp-validation-for="Snowboard.ImagemUri" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Snowboard.Preco" class="control-label"></label>
+                <input asp-for="Snowboard.Preco" class="form-control" />
+                <span asp-validation-for="Snowboard.Preco" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group mt-3 mb-3">
+                <input class="form-check-input" asp-for="Snowboard.EntregaExpressa" />
+                <label asp-for="Snowboard.EntregaExpressa"></label>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Snowboard.DataCadastro" class="control-label"></label>
+                <input asp-for="Snowboard.DataCadastro" class="form-control" />
+                <span asp-validation-for="Snowboard.DataCadastro" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-4">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <input type="submit" value="Excluir" class="btn btn-danger"
+                       asp-page-handler="Exclusao"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}
