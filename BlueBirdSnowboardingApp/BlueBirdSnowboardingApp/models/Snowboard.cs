@@ -5,6 +5,7 @@ namespace BlueBirdSnowboardingApp.models;
 
 public class Snowboard
 {
+    [Key]
 	public int Snowboardid { get; set; }
 
     [Required(ErrorMessage ="Mandatory Field")]

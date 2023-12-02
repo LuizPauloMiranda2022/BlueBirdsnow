@@ -1,12 +1,20 @@
-﻿using BlueBirdSnowboardingApp.Services;
+﻿using BlueBirdSnowboardingApp.Data;
+using BlueBirdSnowboardingApp.Services;
 using NToastNotify;
+using SQLitePCL;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Inicializando SQLitePCl
+
+Batteries.Init();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-builder.Services.AddSingleton<ISnowboardService, SnowboardService>();
+builder.Services.AddTransient<ISnowboardService, SnowboardService>();
+
+builder.Services.AddDbContext<SnowboardingDbContext>();
 
 builder.Services.AddRazorPages().AddNToastNotifyToastr(new ToastrOptions()
 {
