@@ -1,5 +1,6 @@
 ﻿using BlueBirdSnowboardingApp.Data;
 using BlueBirdSnowboardingApp.Services;
+using BlueBirdSnowboardingApp.Services.Data;
 using NToastNotify;
 using SQLitePCL;
 
@@ -12,7 +13,7 @@ Batteries.Init();
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-builder.Services.AddTransient<ISnowboardService, SnowboardService>();
+builder.Services.AddTransient<ISnowboardService,SnowboardService>();
 
 builder.Services.AddDbContext<SnowboardingDbContext>();
 

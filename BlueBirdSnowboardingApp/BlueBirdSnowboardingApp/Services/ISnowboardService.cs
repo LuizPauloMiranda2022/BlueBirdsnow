@@ -10,5 +10,6 @@ public interface ISnowboardService
     void Inlcuir(Snowboard snowboard);
     void Alterar(Snowboard snowboard);
     void Excluir(int snowboardid);
+    IList<Marca> ObterTodasMarcas();
 }
 

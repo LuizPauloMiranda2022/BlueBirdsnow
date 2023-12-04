@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using BlueBirdSnowboardingApp.models;
 using BlueBirdSnowboardingApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using NToastNotify;
 
 namespace BlueBirdSnowboardingApp.Pages
 {
 	public class EditModel : PageModel
     {
+        public SelectList MarcaOptionItems { get; set; }
         private ISnowboardService _service;
         private IToastNotification _toastNotification;
         private readonly IToastNotification toastNotification;
@@ -22,15 +21,21 @@ namespace BlueBirdSnowboardingApp.Pages
             _toastNotification = toastNotification;
         }
 
+       
+       
+
 
         [BindProperty]
         public Snowboard Snowboard { get; set; }
-
+       
 
         public IActionResult OnGet(int id)
         {
             //var service = new SnowboardService();
             Snowboard = _service.Obter(id);
+            MarcaOptionItems = new SelectList(_service.ObterTodasMarcas(),
+                                             nameof(Marca.MarcaId),
+                                             nameof(Marca.Descricao));
 
             if (Snowboard == null)
             {

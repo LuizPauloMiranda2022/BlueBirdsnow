@@ -30,5 +30,9 @@ public class Snowboard
     [DisplayFormat(DataFormatString = "{0: MMMM \\o\\f yyyy}")]
     public DateTime DataCadastro { get; set; }
 
+    [Display(Name = "Brand")]
+
+    public int? MarcaId { get; set; }
+
 }
 

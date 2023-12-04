@@ -3,6 +3,7 @@ using System;
 using BlueBirdSnowboardingApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlueBirdSnowboardingApp.Data.Migrations
 {
     [DbContext(typeof(SnowboardingDbContext))]
-    partial class SnowboardingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231203043851_AdicionarDadosIniciaisMarca")]
+    partial class AdicionarDadosIniciaisMarca
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.14");
@@ -53,9 +56,6 @@ namespace BlueBirdSnowboardingApp.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("MarcaId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -66,21 +66,7 @@ namespace BlueBirdSnowboardingApp.Data.Migrations
 
                     b.HasKey("Snowboardid");
 
-                    b.HasIndex("MarcaId");
-
                     b.ToTable("Snowboard");
-                });
-
-            modelBuilder.Entity("BlueBirdSnowboardingApp.models.Snowboard", b =>
-                {
-                    b.HasOne("BlueBirdSnowboardingApp.models.Marca", null)
-                        .WithMany("Snowboardings")
-                        .HasForeignKey("MarcaId");
-                });
-
-            modelBuilder.Entity("BlueBirdSnowboardingApp.models.Marca", b =>
-                {
-                    b.Navigation("Snowboardings");
                 });
 #pragma warning restore 612, 618
         }

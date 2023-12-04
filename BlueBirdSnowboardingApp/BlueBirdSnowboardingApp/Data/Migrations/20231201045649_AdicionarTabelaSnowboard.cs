@@ -13,7 +13,7 @@ namespace BlueBirdSnowboardingApp.Data.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Snowboard",
-                columns: table => new
+                columns: table => new 
                 {
                     Snowboardid = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),

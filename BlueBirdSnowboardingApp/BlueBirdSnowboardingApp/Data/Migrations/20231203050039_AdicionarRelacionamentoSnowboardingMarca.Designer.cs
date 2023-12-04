@@ -3,6 +3,7 @@ using System;
 using BlueBirdSnowboardingApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlueBirdSnowboardingApp.Data.Migrations
 {
     [DbContext(typeof(SnowboardingDbContext))]
-    partial class SnowboardingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231203050039_AdicionarRelacionamentoSnowboardingMarca")]
+    partial class AdicionarRelacionamentoSnowboardingMarca
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.14");

@@ -20,11 +20,15 @@
     <Folder Include="models\" />
     <Folder Include="Services\" />
     <Folder Include="Data\" />
+    <Folder Include="Services\Memory\" />
+    <Folder Include="Services\Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="models\" />
     <None Remove="Services\" />
     <None Remove="Data\" />
+    <None Remove="Services\Memory\" />
+    <None Remove="Services\Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\images\02.jpg" />
