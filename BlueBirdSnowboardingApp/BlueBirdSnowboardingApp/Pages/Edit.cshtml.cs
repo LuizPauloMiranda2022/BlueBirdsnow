@@ -67,7 +67,7 @@ namespace BlueBirdSnowboardingApp.Pages
             return RedirectToPage("/Index");
         }
 
-        public IActionResult OnPosExclusao()
+        public IActionResult OnPostExclusao()
 
         {
             //Exclusao
